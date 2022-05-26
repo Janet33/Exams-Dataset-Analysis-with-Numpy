@@ -74,3 +74,8 @@ plt.ylabel('Frequency')
 plt.title('Distribution of Exam Grades')
 
 plt.show()
+
+# additionally, count number of times specific grades were scored
+# chart that counts number of times a grade is scored
+p = sns.countplot(x="grade", data = exam_grades, palette="muted")
+_ = plt.setp(p.get_xticklabels(), rotation=90) 
